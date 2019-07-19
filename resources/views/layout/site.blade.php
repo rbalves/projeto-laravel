@@ -2,10 +2,6 @@
 
 <div>
     <div>
-        <h3>@yield('titulo')</h3>
-    </div>
-
-    <div>
         @yield('conteudo')
     </div>
 </div>
