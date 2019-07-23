@@ -15,7 +15,7 @@
 
 <div class="file-field input-field">
   <div class="btn blue">
-    <span><i class="material-icons">image</i></span>
+    <span><i class="material-icons">attach_file</i></span>
     <input type="file" name="imagem">
   </div>
   <div class="file-path-wrapper">
@@ -25,13 +25,13 @@
 
 @if(isset($registro->imagem))
 <div class="input-field">
-  <img width="150" src="{{asset('$registro->imagem')}}">
+  <img width="90" src="{{ asset($registro->imagem) }}">
 </div>
 @endif
 <div class="v">
   <p>
     <label>
-      <input type="checkbox" id="publicado" class="filled-in" {{isset($registro->publicado) && $registro->publicado == 'sim' ? 'checked' : ''}} value="true" />
+      <input type="checkbox" id="publicado" name="publicado" class="filled-in" {{isset($registro->publicado) && $registro->publicado == 'sim' ? 'checked' : ''}} value="true" />
       <span>Publicar?</span>
     </label>
   </p>

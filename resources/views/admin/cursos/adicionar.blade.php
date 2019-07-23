@@ -12,6 +12,5 @@
         <button class="btn green">Salvar</button>
       </form>
     </div>
-
   </div>
 @endsection

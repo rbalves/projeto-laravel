@@ -21,12 +21,12 @@
           </tr>
         </thead>
         <tbody>
-          @foreach($registros as $regsitro)
+          @foreach($registros as $registro)
           <tr>
             <td>{{ $registro->id }}</td>
             <td>{{ $registro->titulo }}</td>
             <td>{{ $registro->descricao }}</td>
-            <td><img src="{{ asset($registro->imagem) }}" alt="{{ $registro->titulo }}"></td>
+            <td><img src="{{ asset($registro->imagem) }}" alt="{{ $registro->titulo }}" width="90"></td>
             <td>{{ $registro->publicado }}</td>
             <td>
               <a class="btn deep-orange" href="{{ route('admin.cursos.editar',$registro->id) }}">Editar</a>
